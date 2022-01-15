@@ -1,0 +1,294 @@
+/* Main Stylesheet */
+/*
+- general
+- titleScreen
+- termsOfUse
+- gameSet
+- addPlayers
+- game
+- media queries
+*/
+
+
+/* general */
+
+:root {
+  font-size: 16px;
+  font-family: 'Arial';
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --main-theme-color: rgb(187, 119, 193);
+  --main-theme-color-invert: rgb(78, 232, 32);
+  --transition-speed: 600ms;
+  --error-text: red;
+}
+
+body {
+  font-family: 'Arial';
+  margin: 0;
+  padding: 0;
+}
+
+.bodyThemeMain{
+  background-color: var(--main-theme-color);
+}
+
+.bodyThemeSecondary{
+  background-color: rgb(242, 242, 242);
+}
+
+.displayNone{
+  display: none;
+}
+
+/* === titleScreen === */
+
+.titleScreen{
+
+}
+
+.titleScreenWrapper{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  top: 45vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+}
+
+.titleScreenLogoWrapper{
+  width: 12;
+}
+
+.titleScreenLogo1{
+  position: relative;
+  height: 6.5em;
+  filter: invert(100%);
+  transform: scaleX(-1);
+  top: 2em;
+}
+
+.titleScreenLogo2{
+  height: 6.5em;
+  filter: invert(100%);
+}
+
+.titleScreenTitleWrapper{
+  display: flex;
+  color: white;
+  font-size: 4em;
+  flex-direction: column;
+  margin-left: 0.3em;
+}
+
+.titleScreenTitle1{
+  color: white;
+}
+
+.titleScreenTitle2{
+  color: white;
+}
+
+.titleScreenButton{
+  position: absolute;
+  color: white;
+  top: 65vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  font-size: 1.3em;
+  border: 0.1em solid white;
+  padding: 0.8em;
+  border-radius: 0.2em;
+  cursor: pointer;
+}
+
+/* === termsOfUse === */
+
+.termsOfUseBox{
+  background-color: white;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.termsOfUseBoxTitle{
+  position: relative;
+  align-self: center;
+  font-size: 2em;
+}
+
+/* termsOfUseBox1 */
+
+.termsOfUseBox1{
+  margin-top: 3em;
+  display: flex;
+  flex-direction: row;
+}
+
+.termsOfUseBox1LogoWrapper{
+  background-color: var(--main-theme-color);
+  border-radius: 3em;
+  height: 4em;
+  width: 4em;
+}
+
+.termsOfUseBox1Logo{
+  height: 2em;
+  filter: invert(100%);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.termsOfUseBox1Title{
+  align-self: center;
+  font-size: 1.2em;
+  margin-left: 1em;
+}
+
+/* termsOfUseBox2 */
+
+.termsOfUseBox2{
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+}
+
+.termsOfUseBox2LogoWrapper{
+  background-color: var(--main-theme-color);
+  border-radius: 3em;
+  height: 4em;
+  width: 4em;
+}
+
+.termsOfUseBox2Logo{
+  height: 2em;
+  filter: invert(100%);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.termsOfUseBox2Title{
+  align-self: center;
+  font-size: 1.2em;
+  margin-left: 1em;
+}
+
+/* termsOfUseBox3 */
+
+.termsOfUseBox3{
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+}
+
+.termsOfUseBox3LogoWrapper{
+  background-color: var(--main-theme-color);
+  border-radius: 3em;
+  height: 4em;
+  width: 4em;
+}
+
+.termsOfUseBox3Logo{
+  height: 2em;
+  filter: invert(100%);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.termsOfUseBox3Title{
+  align-self: center;
+  font-size: 1.2em;
+  margin-left: 1em;
+}
+
+/* termsOfUseBoxButton */
+
+.termsOfUseBoxButton{
+  margin-top: 2em;
+  font-size: 1.3em;
+  align-self: center;
+  color: var(--main-theme-color);
+  border: 0.1em solid var(--main-theme-color);
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  padding-left: 2em;
+  padding-right: 2em;
+  border-radius: 0.2em;
+  cursor: pointer;
+}
+
+/* === gameSet === */
+
+.gameSet{
+
+}
+
+/* gameSetDisplayWrapper */
+
+.gameSetDisplayWrapper{
+  background-color: white;
+  position: absolute;
+  top: 20vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.gameSetDeckDisplay{
+
+}
+
+.gameSetDeckTitle{
+
+}
+
+.gameSetDeckTitle2{
+  font-size: 2em;
+}
+
+.gameSetDeckLogo{
+
+}
+
+.gameSetDeckLogo2{
+
+}
+
+.gameSetDeckPrevious{
+
+}
+
+.gameSetDeckNext{
+
+}
+
+/* gameSetInstructionsBox */
+
+.gameSetInstructionsBox{
+
+}
+
+.gameSetInstructionsBoxText{
+
+}
+
+.gameSetButton{
+
+}

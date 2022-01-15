@@ -1,0 +1,89 @@
+body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+/* Background */
+
+.backgroundCustom1{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100vw;
+  top: 110vh;
+}
+
+.shapesRow{
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  margin-bottom: 3em;
+}
+
+.squareM{
+ background-color: rgba(255, 255, 255, 0.4);
+ height: 5em;
+ width: 5em;
+}
+
+.triangleM{
+  width: 0;
+  height: 0;
+  border-left: 2.886em solid transparent;
+  border-right: 2.886em solid transparent;
+  border-bottom: 5em solid rgba(255, 255, 255, 0.4);
+}
+
+.circleM{
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 5em;
+  width: 5em;
+  border-radius: 10em;
+}
+
+.squareL{
+ background-color: rgba(255, 255, 255, 0.4);
+ height: 8em;
+ width: 8em;
+}
+
+.triangleL{
+  width: 0;
+  height: 0;
+  border-left: 4.618em solid transparent;
+  border-right: 4.618em solid transparent;
+  border-bottom: 8em solid rgba(255, 255, 255, 0.4);
+}
+
+.circleL{
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 8em;
+  width: 8em;
+  border-radius: 10em;
+}
+
+.marginAdd{
+  margin-left: 1em;
+}
+
+.moveUpRight{
+  animation-name: moveUpRight;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.moveUpLeft{
+  animation-name: moveUpLeft;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+/* keyframes */
+
+@keyframes moveUpRight{
+  100% {transform: translateY(-200vh) rotate(360deg);}
+}
+
+@keyframes moveUpLeft{
+  100% {transform: translateY(-200vh) rotate(-360deg);}
+}
