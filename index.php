@@ -23,7 +23,6 @@
       </div>
       <div class="titleScreenButton" id="titleScreenButton">Click Here To Begin</div>
     </div>
-
     <div class="termsOfUse" id="termsOfUse">
       <div class="termsOfUseBox">
         <div class="termsOfUseBoxTitle">Let's get this outta the way</div>
